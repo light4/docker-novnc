@@ -17,7 +17,7 @@ make
 docker run -td -p 6080:6080 docker-novnc
 ```
 
-访问 http://localhost:6080 or http://privateip:6080 即可
+访问 http://localhost:6080/vnc_auto.html or http://privateip:6080/vnc_auto.html 即可
 
 ## Credits
 
