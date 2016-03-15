@@ -1,4 +1,5 @@
 CONTAINER = docker-novnc
+PORT = 6080
 
 all: $(CONTAINER)
 
@@ -6,7 +7,7 @@ $(CONTAINER):
 	docker build -t $(CONTAINER) .
 
 run:
-	docker run -d -p 80:80 $(CONTAINER)
+	docker run -d -p $(PORT):$(PORT) $(CONTAINER)
 
 stop:
 	docker stop $$(docker ps -q)
